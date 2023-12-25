@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+
+def safe_print_list(my_list=[], x=0):
+    try:
+        res = []
+        for i in range(1, x):
+            res.append(my_list[i])
+            print(f"res[i]", end = "")
+    except IndexError:
+        break
+    print()
